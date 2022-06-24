@@ -68,3 +68,12 @@ function validarFormCiudades() {
         alert("No puedes dejar campos vacios");
     }
 }
+
+function JSONCiudades(e) {
+    let idxe = e.target.attributes["data-id"].value;
+    let url = rutaJSON+"ciudades/json.php?id="+idxe;
+    console.log(url);
+    $.get(url, function (data) {
+        console.log(data);
+    });
+}
