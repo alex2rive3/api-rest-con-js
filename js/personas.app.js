@@ -63,7 +63,6 @@ function JSONPersonas(e) {
     let idxe = e.target.attributes["data-id"].value;
     let url = rutaJSON+"personas/json.php?id="+idxe;
     console.log(url);
-    $.get(url, function (data) {
-        //console.log(data);
-    });
+    window.open(url);
+    $.get(url);
 }
